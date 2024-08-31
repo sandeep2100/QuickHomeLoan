@@ -1,0 +1,410 @@
+{% load static %}
+
+        <!-- Start Navbar Area -->
+        <nav class="navbar navbar-expand-lg bg-white ptb-19" id="navbar">
+            <div class="container mw-1380">
+                <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'assets/images/logo.svg' %}" class="main-logo" alt="white-logo">
+                    <img src="{% static 'assets/images/white-logo.svg' %}" class="white-logo d-none" alt="white-logo">
+                </a>
+                <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
+                    <span class="burger-menu">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </span>
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Home
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item active" href="index.html">
+                                        Home One
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="index-2.html">
+                                        Home Two
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="index-3.html">
+                                        Home Three
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Loan Programs
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="loan-programs.html">
+                                        Loan Programs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="loan-program-details.html">
+                                        Loan Program Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About Us
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="history-fidelity.html">
+                                        History & Fidelity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="management.html">
+                                        Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="management-details.html">
+                                        Management Details
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="calculate-mortgage.html">
+                                        Calculate Mortgage
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="career.html">
+                                        Career
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="career-details.html">
+                                        Career Details
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item sub-dropdown dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Authentication
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="login.html">
+                                                Login
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="register.html">
+                                                Register
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="change-password.html">
+                                                Change Password
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="forgot-password.html">
+                                                Forgot Password
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="faq.html">
+                                        FAQ's
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="privacy-policy.html">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="terms-conditions.html">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="error-404.html">
+                                        Error 404
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="blog.html">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="blog-details.html">
+                                        Blog Details
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="tags.html">
+                                        Tags
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="categories.html">
+                                        Categories
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="author.html">
+                                        Author
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="others-options ps-0 mb-0 list-unstyled justify-content-end">
+                    <li>
+                        <a href="calculate-mortgage.html" class="btn btn-primary">
+                            Apply Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End Navbar Area -->
+
+        <!-- Start Mobile Navbar Area -->
+        <div class="mobile-navbar offcanvas offcanvas-end border-0" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+                <a href="index.html" class="logo d-inline-block">
+                    <img src="{% static 'assets/images/logo.svg' %}" alt="logo">
+                </a>
+                <a href="index.html" class="logo d-none">
+                    <img src="{% static 'assets/images/white-logo.svg' %}" alt="logo">
+                </a>
+
+                <button type="button" class="close-btn bg-transparent position-relative lh-1 p-0 border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="ri-close-fill"></i>
+                </button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="mobile-menu">
+                    <li class="mobile-menu-list active">
+                        <a href="javascript:void(0);">
+                            Home
+                        </a>
+
+                        <ul class="mobile-menu-items">
+                            <li>
+                                <a class="dropdown-item active" href="index.html">
+                                    Home One
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="index-2.html">
+                                    Home Two
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="index-3.html">
+                                    Home Three
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-menu-list">
+                        <a href="javascript:void(0);">
+                            Loan Programs
+                        </a>
+
+                        <ul class="mobile-menu-items">
+                            <li>
+                                <a class="dropdown-item" href="loan-programs.html">
+                                    Loan Programs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="loan-program-details.html">
+                                    Loan Program Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-menu-list">
+                        <a href="javascript:void(0);">
+                            About Us
+                        </a>
+
+                        <ul class="mobile-menu-items">
+                            <li>
+                                <a class="dropdown-item" href="history-fidelity.html">
+                                    History & Fidelity
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="management.html">
+                                    Management
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="management-details.html">
+                                    Management Details
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="calculate-mortgage.html">
+                                    Calculate Mortgage
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="career.html">
+                                    Career
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="career-details.html">
+                                    Career Details
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-menu-list">
+                        <a href="javascript:void(0);">
+                            Pages
+                        </a>
+
+                        <ul class="mobile-menu-items">
+                            <li class="mobile-menu-list">
+                                <a href="javascript:void(0);">
+                                    Authentication
+                                </a>
+
+                                <ul class="mobile-menu-items sub-dropdown">
+                                    <li>
+                                        <a class="dropdown-item" href="login.html">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="register.html">
+                                            Register
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="change-password.html">
+                                            Change Password
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="forgot-password.html">
+                                            Forgot Password
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="faq.html">
+                                    FAQ's
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="privacy-policy.html">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="terms-conditions.html">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="error-404.html">
+                                    Error 404
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-menu-list">
+                        <a href="javascript:void(0);">
+                            News
+                        </a>
+
+                        <ul class="mobile-menu-items">
+                            <li>
+                                <a class="dropdown-item" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="blog-details.html">
+                                    Blog Details
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tags.html">
+                                    Tags
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="categories.html">
+                                    Categories
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="author.html">
+                                    Author
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-menu-list without-icon">
+                        <a href="contact-us.html" class="nav-link">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Mobile Navbar Area -->

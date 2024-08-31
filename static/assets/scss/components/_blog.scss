@@ -1,0 +1,199 @@
+/* Blog Area Style
+============================================*/
+.blog-single-item {
+    padding: 25px;
+    border: 1px solid $border-color;
+    border-radius: 12px;
+    .tags {
+        margin-bottom: 10px;
+        li {
+            a {
+                text-decoration: none;
+                border: 1px solid $border-color;
+                display: inline-block;
+                padding: 4px 15px;
+                border-radius: 50px;
+                font-size: $font-size-14;
+                &:hover {
+                    background-color: $primary;
+                    border-color: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+    h3 {
+        font-size: 22px;
+        line-height: 1.6;
+        a {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+    .blog-img {
+        margin-bottom: 15px;
+        img {
+            border-radius: 12px;
+        }
+    }
+    p {
+        margin-bottom: 25px;
+    }
+    .blog-info {
+        line-height: 1;
+        border-top: 1px solid $border-color;
+        padding-top: 20px;
+        margin-top: 0;
+        li {
+            font-size: 14px;
+            color: rgba(76, 76, 76, 0.65);
+            border-right: 1px solid $border-color;
+            padding-right: 10px;
+            margin-right: 10px;
+            i {
+                color: $primary;
+                margin-right: 2px;
+            }
+            a {
+                text-decoration: none;
+                color: rgba(76, 76, 76, 0.65);
+                &:hover {
+                    color: $primary;
+                }
+            }
+            &:last-child {
+                padding-right: 0;
+                margin-right: 0;
+                border: none;
+            }
+        }
+    }
+    &:hover {
+        background-color: $gray2;
+        h3 {
+            a {
+                color: $primary;
+            }
+        }
+    }
+    &.style-two {
+        padding: 0;
+        border: 0;
+        .blog-img {
+            margin-bottom: 0;
+            img {
+                border-radius: 12px 12px 0px 0px;
+            }
+        }
+        .blog-content {
+            border-radius: 0px 0px 12px 12px;
+            border: 1px solid rgba(101, 152, 49, 0.35);
+            padding: 30px 25px;
+            .blog-info {
+                border: none;
+                padding-top: 0;
+            }
+        }
+    }
+    &.style-three {
+        background-color: $white;
+        .blog-content {
+            .blog-info {
+                border: none;
+                padding-top: 0;
+            }
+        }
+    }
+}
+.swiper-pagination1 {
+	line-height: 1;
+    margin-top: 50px;
+	&.swiper-pagination-clickable {
+		.swiper-pagination-bullet {
+			width: 16px;
+			height: 16px;
+			border: 1px solid $primary;
+			background-color: transparent;
+			transition: $transition;
+			position: relative;
+			opacity: 1;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				width: 10px;
+				height: 10px;
+				background-color: $white;
+				border-radius: 50px;
+				transition: $transition;
+			}
+			&.swiper-pagination-bullet-active {
+				border-color: $primary;
+				&::before {
+					background-color: $primary;
+				}
+			}
+		}
+	}
+}
+.blog-area {
+    &.style-three {
+        .container-fluid {
+            left: calc((100% - 1295px) / 2);
+            position: relative;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .blog-single-item {
+        padding: 15px;
+        h3 {
+            font-size: 19px;
+        }
+        p {
+            margin-bottom: 18px;
+        }
+        .blog-info {
+            li {
+                padding-right: 1px;
+                margin-right: 1px;
+                font-size: 12px;
+            }
+        }
+        &.style-two {
+            .blog-content {
+                padding: 20px;
+            }
+        }
+    }
+    .swiper-pagination1 {
+        margin-top: 25px;
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .blog-single-item {
+        padding: 15px;
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            margin-bottom: 18px;
+        }
+        .blog-info {
+            li {
+                padding-right: 8px;
+                margin-right: 8px;
+                font-size: 13px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,67 @@
+/*
+Page-navigation Area Style
+======================================================*/
+.pagination-area {
+	.page-numbers {
+		width: 42px;
+		height: 42px;
+		line-height: 42px;
+		text-align: center;
+		display: inline-block;
+		margin-left: 0;
+		margin-right: 0;
+        font-size: 16px;
+		color: $secondary;
+		text-decoration: none;
+		transition: $transition;
+		background-color: transparent;
+        position: relative;
+		border-radius: 50px;
+		border: 1px solid $border-color;
+		font-weight: 600;
+		margin: 0 3px;
+		i {
+			font-size: 22px;
+			font-weight: normal;
+			color: $primary;
+			transition: $transition;
+		}
+		&:hover {
+			color: $dark;
+			background-color: $white;
+			i {
+				color: $white;
+			}
+		}
+		&.next {
+			top: 3px;
+			&:hover {
+				background-color: $primary;
+				color: $white;
+			}
+		}
+		&:hover {
+			color: $white;
+			background-color: $primary;
+		}
+		&.current {
+			background-color: $primary;
+			color: $white;
+		}
+	}
+	
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+	.pagination-area {
+		margin-top: 0 !important;
+		.page-numbers {
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+		}
+	}
+
+}

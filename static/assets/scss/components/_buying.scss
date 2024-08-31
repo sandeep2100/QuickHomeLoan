@@ -1,0 +1,64 @@
+/* Buying Area Style
+============================================*/
+.buying-single-item {
+    .buying-img {
+        img {
+            border-radius: 12px 12px 0 0;
+        }
+    }
+    .buying-content {
+        padding: 25px;
+        border: 1px solid rgba(101, 152, 49, 0.35);
+        border-radius: 0 0 12px 12px;
+        transition: $transition;
+        h3 {
+            font-size: 22px;
+            margin-bottom: 16px;
+            a {
+                text-decoration: none;
+                color: $secondary;
+            }
+        }
+        .border-top {
+            border-color: rgba(101, 152, 49, 0.35);
+            padding-top: 15px;
+            margin-top: 25px;
+        }
+    }
+    &:hover {
+        .buying-content {
+            background-color: #F4FBE9;
+            .read-more {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .buying-single-item {
+        .buying-content {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .buying-single-item {
+        .buying-content {
+            padding: 20px;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}

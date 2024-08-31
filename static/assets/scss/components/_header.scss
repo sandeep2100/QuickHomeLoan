@@ -1,0 +1,115 @@
+/* Header Area Style
+============================================*/
+.ptb-20 {
+    padding-top: 16.5px;
+    padding-bottom: 16.5px;
+}
+.info-link {
+    line-height: 1;
+    li {
+        margin-right: 20px;
+        padding-right: 20px;
+        font-size: $font-size-14;
+        font-weight: 500;
+        border-right: 1px solid #A9A9A9;
+        &:last-child {
+            border-right: none;
+            padding-right: 0;
+            margin-right: 0;
+        }
+        i {
+            font-size: $font-size-16;
+            position: relative;
+            margin-right: 5px;
+            color: $body-color;
+            transition: $transition;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $primary;
+                i {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+.import-link {
+    line-height: 1;
+    li {
+        margin-right: 13px;
+        padding-right: 13px;
+        font-size: $font-size-14;
+        font-weight: 500;
+        border-right: 1px solid #A9A9A9;
+        &:last-child {
+            border-right: none;
+            padding-right: 0;
+            margin-right: 0;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .info-link {
+        li {
+            border: none;
+            margin-bottom: 8px;
+            padding-right: 0;
+            margin-right: 0;
+        }
+    }
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .info-link {
+        li {
+            border: none;
+            margin-bottom: 8px;
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .info-link {
+        margin-bottom: 10px !important;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+
+    
+
+}
+
+/* Min width 1400px to Max width 1550px */
+@media only screen and (min-width : 1400px) and (max-width : 1550px) {
+
+    
+
+}

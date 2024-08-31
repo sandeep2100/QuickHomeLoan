@@ -1,0 +1,127 @@
+/* Service Area Style
+============================================*/
+.service-single-item {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4FBE9;
+        transform: scale(1.5);
+        transition: $transition;
+        opacity: 0;
+    }
+    .icon {
+        border: 1px solid rgba(101, 152, 49, 0.23);
+        background-color: #F4FBE9;
+        width: 72px;
+        height: 72px;
+        line-height: 78px;
+        text-align: center;
+        border-radius: 50px;
+        display: inline-block;
+        font-size: 34px;
+        margin-bottom: 25px;
+        transition: $transition;
+        color: $primary;
+    }
+    h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        a {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    &:hover {
+        .icon {
+            background-color: $primary;
+            color: $white;
+        }
+        &::before {
+            transform: scale(0);
+            border-radius: 100%;
+            opacity: 1;
+        }
+    }
+    &.style-two {
+        h3 {
+            font-size: 18px;
+        }
+    }
+}
+.service-content {
+    margin-bottom: 50px;
+    h2 {
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 50px;
+        max-width: 424px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    p {
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 50px;
+    }
+}
+.services-img {
+    margin-left: 50px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .service-single-item {
+        .icon {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    }
+    .services-img {
+        margin-left: 0;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .service-single-item {
+        .icon {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+    }
+    .services-img {
+        margin-left: 0;
+        margin-bottom: 50px;
+        text-align: center; 
+    }
+
+}

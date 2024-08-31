@@ -1,0 +1,209 @@
+/* Financing Area Style
+============================================*/
+.financing-wrap {
+    background-color: $secondary;
+    padding: 130px 95px;
+    padding-bottom: 60px;
+    border-radius: 12px;
+}
+.financing-img-wrap {
+    margin-right: 72px;
+}
+.financing-img {
+    margin-top: -50px;
+    position: relative;
+    top: -60px;
+}
+.financing-img-2 {
+    margin-bottom: -140px;
+}
+.accordion {
+    &.financing {
+        .accordion-item {
+            border-radius: 12px;
+            border: none;
+            padding: 0;
+            margin-bottom: 16px;
+            background-color: $primary;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            
+            .accordion-header {
+                border: none;
+                .accordion-button {
+                    background-color: $secondary;
+                    border: 1px solid rgba(255, 255, 255, 0.14);
+                    font-family: $heading-font-family;
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: $white;
+                    padding: 18px 25px !important;
+                    border-radius: 12px !important;
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                    &::after {
+                        content: "\f108";
+                        font-family: flaticon_mycollection !important;
+                        background-image: unset;
+                    }
+                    &:not(.collapsed) {
+                        background-color: $primary;
+                        border-color: $primary;
+                        &::after {
+                            content: "\f108";
+                        }
+                    }
+                }
+            }
+            &:first-of-type {
+                .accordion-button {
+                    border-radius: 0;
+                    &.collapsed {
+                        border-radius: 0;
+                    }
+                }
+            }
+            &:last-of-type {
+                .accordion-button {
+                    border-radius: 0;
+                    &.collapsed {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+        .accordion-body {
+            padding: 30px;
+            padding-top: 17px;
+            background-color: $primary;
+            border-radius: 0 0 12px 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.14);
+            p {
+                color: rgba(255, 255, 255, 0.70);
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .financing-wrap {
+        padding: 20px;
+    }
+    .financing-img-wrap {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img-2 {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .accordion {
+        &.financing {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        padding: 18px !important;
+                        font-size: 17px;
+                    }
+                }
+            }
+            .accordion-body {
+                padding: 17px;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .financing-wrap {
+        padding: 20px;
+    }
+    .financing-img-wrap {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img-2 {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .accordion {
+        &.financing {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        padding: 18px !important;
+                        font-size: 17px;
+                    }
+                }
+            }
+            .accordion-body {
+                padding: 17px;
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px)  {
+
+    .financing-img-wrap {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img-2 {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width : 1200px) and (max-width : 1399px) {
+
+    .financing-img-wrap {
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .financing-img-2 {
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}

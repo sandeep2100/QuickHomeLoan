@@ -1,0 +1,105 @@
+/* Career Area Style
+============================================*/
+.career-wrap {
+    max-width: 870px;
+    margin: auto;
+}
+.career-search-form {
+    margin-bottom: 30px;
+    .label {
+        font-size: 16px;
+        font-weight: 500;
+        color: $secondary;
+    }
+    .form-control {
+        border-radius: 4px;
+        border: 1px solid rgba(101, 152, 49, 0.35);
+        background-color: transparent;
+        height: 42px;
+    }
+    .src-btn {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        right: 15px !important;
+    }
+}
+.career-single-item {
+    border-radius: 12px;
+    border: 1px solid rgba(101, 152, 49, 0.35);
+    padding: 50px;
+    transition: $transition;
+    margin-bottom: 12px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        a {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+    ul {
+        li {
+            i {
+                color: $primary;
+                margin-right: 6px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &:hover {
+        transform: translateY(-5px);
+        background-color: $gray2;
+        h3 {
+            a {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .career-single-item {
+        padding: 20px;
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        ul {
+            li {
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .read-more {
+            font-size: 15px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .career-single-item {
+        padding: 30px 20px;
+        h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .read-more {
+            font-size: 15px;
+        }
+    }
+
+}

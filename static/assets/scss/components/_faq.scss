@@ -1,0 +1,166 @@
+/* FAQ Area Style
+============================================*/
+.accordion {
+    &.faq {
+        margin-left: -111px;
+        .accordion-item {
+            border-radius: 12px;
+            border: none;
+            padding: 0;
+            margin-bottom: 12px;
+            background-color: $gray2;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .accordion-header {
+                border: none;
+                .accordion-button {
+                    background-color: transparent;
+                    border: 1px solid rgba(255, 255, 255, 0.14);
+                    font-family: $heading-font-family;
+                    font-weight: 500;
+                    font-size: 22px;
+                    color: $secondary;
+                    padding: 23px 25px !important;
+                    border-radius: 12px !important;
+                    box-shadow: none;
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                    }
+                    &::after {
+                        content: "\ea6d";
+                        font-family: remixicon!important;
+                        background-image: unset;
+                        position: relative;
+                        top: -3px;
+                        right: -7px;
+                    }
+                    &:not(.collapsed) {
+                        &::after {
+                            content: "\ea6d";
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+            &:first-of-type {
+                .accordion-button {
+                    border-radius: 0;
+                    &.collapsed {
+                        border-radius: 0;
+                    }
+                }
+            }
+            &:last-of-type {
+                .accordion-button {
+                    border-radius: 0;
+                    &.collapsed {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+        .accordion-body {
+            padding: 30px;
+            padding-top: 17px;
+            border-radius: 0 0 12px 12px;
+            border-top: 1px solid $border-color;
+        }
+        &.me-111 {
+            margin-right: -111px;
+            position: relative;
+        }
+    }
+}
+.faq-img {
+    border-bottom: 1px solid $border-color;
+    img {
+        border-radius: 12px;
+    }
+    .read-more {
+        padding-top: 23px;
+        padding-bottom: 23px;
+        display: inline-block;
+    }
+}
+.faq-content {
+    margin-left: 58px;
+    margin-bottom: 45px;
+    h2 {
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .faq-content {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 26px;
+        }
+    }
+    .accordion {
+        &.faq {
+            margin-left: 0;
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 20px;
+                        padding: 20px !important;
+                    }
+                }
+            }
+            .accordion-body {
+                padding: 20px;
+                padding-top: 15px;
+            }
+            &.me-111 {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+    
+    .faq-content {
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .accordion {
+        &.faq {
+            margin-left: 0;
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 20px;
+                        padding: 20px !important;
+                    }
+                }
+            }
+            .accordion-body {
+                padding: 20px;
+                padding-top: 15px;
+            }
+            &.me-111 {
+                margin-right: 0;
+            }
+        }
+    }
+
+}

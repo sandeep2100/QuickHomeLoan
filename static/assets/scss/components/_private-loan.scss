@@ -1,0 +1,100 @@
+/* Private Loan Area Style
+============================================*/
+.private-loan-list {
+    margin-bottom: 0;
+    margin-right: 135px;
+    li {
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            border-radius: 12px;
+            border: 1px solid rgba(101, 152, 49, 0.35);
+            text-decoration: none;
+            font-family: $heading-font-family;
+            color: $secondary;
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 22px;
+            span {
+                font-weight: 500;
+            }
+            i {
+                position: relative;
+                top: 3px;
+            }
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
+.private-loan-content {
+    h2 {
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .private-loan-img {
+        margin-top: 45px;
+        img {
+            border-radius: 12px;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .private-loan-list {
+        margin-right: 0;
+        margin-bottom: 30px;
+        li {
+            a {
+                font-size: 18px;
+                padding: 12px 20px;
+            }
+        }
+    }
+    .private-loan-content {
+        h2 {
+            font-size: 26px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .private-loan-list {
+        margin-right: 0;
+        margin-bottom: 30px;
+        li {
+            a {
+                font-size: 18px;
+                padding: 12px 20px;
+            }
+        }
+    }
+    .private-loan-content {
+        h2 {
+            font-size: 26px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px)  {
+
+    .private-loan-list {
+        margin-right: 0;
+    }
+
+}

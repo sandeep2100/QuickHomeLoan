@@ -1,0 +1,113 @@
+/* Process Area Style
+============================================*/
+.process-content {
+    margin-top: -9px;
+    h2 {
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &.mw-420 {
+        max-width: 420px;
+        margin-left: auto;
+    }
+}
+.process-single-item {
+    margin-bottom: 25px;
+    .nich {
+        margin-bottom: 30px;
+    }
+    span {
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        display: inline-block;
+        border-radius: 50px;
+        color: $white;
+        background-color: $secondary;
+        text-align: center;
+        transition: $transition;
+    }
+    h3 {
+        font-size: 22px;
+        margin-bottom: 13px;
+    }
+    &:hover {
+        span {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+}
+.process-content-wrap {
+    margin-bottom: 60px;
+}
+.video-img {
+    img {
+        border-radius: 12px;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .process-content {
+        margin-top: 0;
+        h2 {
+            font-size: 25px;
+        }
+        &.mw-420 {
+            max-width: 100%;
+            margin-top: 15px;
+        }
+    }
+    .process-single-item {
+        img {
+            margin-left: -37px;
+        }
+        .nich {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 992px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .process-content {
+        margin-top: 0;
+        h2 {
+            font-size: 30px;
+        }
+        &.mw-420 {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .process-single-item {
+        .nich {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media (min-width: 1399px) {
+
+    .process-area {
+        .row {
+         --bs-gutter-x: 62px;
+        } 
+     }
+
+}
